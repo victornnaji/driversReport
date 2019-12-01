@@ -4,6 +4,7 @@ Run the server with
 
 ```bash
 yarn install
+yarn tsc
 yarn start
 ```
 
@@ -24,3 +25,21 @@ Build 3 views
 - A dashboard with stats and the trips listed in a table.
 - A drivers' master-detail page
 - A trip page to show the detail for a single trip
+
+Endpoints
+
+```
+GET all Trips : http://localhost:3005/api/trips
+
+GET trip by ID : http://localhost:3005/api/trips/:tripID
+
+GET drivers : http://localhost:3005/api/drivers
+
+GET drivers by ID : http://localhost:3005/api/drivers/:driverID
+
+GET Vehicle by ID : http://localhost:3005/api/vehicle/:vehicleID
+
+GET stats : http://localhost:3005/api/stats
+```
+
+## A sample can be found on https://driver-report-dashboard.herokuapp.com/

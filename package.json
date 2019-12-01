@@ -8,10 +8,9 @@
   "engines": {
     "node": "~10.16.0",
     "npm": "6.9.0",
-    "yarn": "1.17.0"
+    "yarn": "^1.17.3"
   },
   "scripts": {
-    "postinstall": "./upstart.sh",
     "start": "bin/www",
     "test": "jest",
     "client:start": "cd client; yarn start"
