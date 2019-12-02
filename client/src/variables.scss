@@ -2,3 +2,11 @@ $bg-color: #323a46;
 $light-green: #03dac6;
 $grey-light: #f1f5f7;
 $grey-dark: #adb5bd;
+$blue: #3700b3;
+$pink-color: #ff8acc;
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

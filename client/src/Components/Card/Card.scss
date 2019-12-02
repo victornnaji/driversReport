@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.cards-container {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.cards {
+  background-color: $bg-color;
+  width: 85%;
+  height: 85%;
+}

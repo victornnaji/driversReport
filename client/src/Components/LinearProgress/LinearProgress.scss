@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.MuiLinearProgress-barColorSecondary {
+  background-color: $pink-color !important;
+}
+
+.MuiLinearProgress-colorSecondary {
+  background-color: lighten($pink-color, 54%) !important;
+}

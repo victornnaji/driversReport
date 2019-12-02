@@ -5,7 +5,7 @@ const Trips = () => {
   const { setHeading } = useContext(HeadingContext);
   useEffect(() => {
     setHeading('Trips');
-  }, []);
+  }, [setHeading]);
   return <div>trips</div>;
 };
 
