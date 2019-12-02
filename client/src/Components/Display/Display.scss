@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.display-container {
+  background-color: inherit;
+  width: 90%;
+  margin: 2rem 2.5rem 0 2.5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.display-items {
+  width: 100%;
+  background-color: $bg-color;
+}

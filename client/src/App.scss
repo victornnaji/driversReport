@@ -10,7 +10,7 @@ html {
 html,
 body {
   height: 100%;
-  background-color: #121212;
+  background-color: #282e38;
   font-family: 'Roboto', sans-serif;
 }
 .container {
@@ -19,4 +19,5 @@ body {
 .App {
   color: #fff;
   height: 100%;
+  display: flex;
 }
