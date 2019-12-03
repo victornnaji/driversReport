@@ -110,17 +110,51 @@ const Award = () => {
             </div>
             <div className="details">
               <div className="name">{driverName}</div>
-              <div className="flex-between awards-list">
-                <div>
-                  <span role="img" aria-label="cars" className="emoji">
-                    🚗
-                  </span>
+
+              <div className="lists">
+                <div className="flex-between awards-list">
+                  <div>
+                    <span role="img" aria-label="cars" className="emoji">
+                      💰
+                    </span>
+                  </div>
+                  <div className="totalAmount">
+                    ₦
+                    {Math.ceil(winnerDetails[0].totalCash)
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                  </div>
+                  <div>1st</div>
                 </div>
-                <div className="totalAmount">
-                  ₦
-                  {Math.ceil(winnerDetails[0].totalCash)
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+
+                <div className="flex-between awards-list">
+                  <div>
+                    <span role="img" aria-label="cars" className="emoji">
+                      🚗
+                    </span>
+                  </div>
+                  <div className="totalAmount">{winnerDetails[0].sum}</div>
+                  <div>2nd</div>
+                </div>
+
+                <div className="flex-between awards-list">
+                  <div>
+                    <span role="img" aria-label="cars" className="emoji">
+                      📱
+                    </span>
+                  </div>
+                  <div className="totalAmount">{winnerDetails[0].NonCash}</div>
+                  <div>1st</div>
+                </div>
+
+                <div className="flex-between awards-list">
+                  <div>
+                    <span role="img" aria-label="cars" className="emoji">
+                      💵
+                    </span>
+                  </div>
+                  <div className="totalAmount">{winnerDetails[0].Cash}</div>
+                  <div>1st</div>
                 </div>
               </div>
             </div>

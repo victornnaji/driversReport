@@ -8,6 +8,7 @@ import BarChart from '../BarChart/BarChart';
 import Chips from '../Badge/Badge';
 import LinearProgressBar from '../LinearProgress/LinearProgress';
 import Award from '../Award/Award';
+import LineChartHolder from '../LineChartContainer/LineChartHolder';
 
 const Home = () => {
   const { setHeading } = useContext(HeadingContext);
@@ -71,6 +72,7 @@ const Home = () => {
                 <div className="chart-holder">
                   <BarChart
                     gradient="#10c469"
+                    bg="#10c469"
                     labels={['Men', 'Women']}
                     datasetLabel="Gender"
                     data={[gender.male, gender.female]}
@@ -113,7 +115,9 @@ const Home = () => {
       <div className="home-body">
         <div className="row">
           <div className="col-lg-6">
-            <Card height="55">hello</Card>
+            <Card height="55">
+              <LineChartHolder />
+            </Card>
           </div>
 
           <div className="col-lg-6">
@@ -122,7 +126,6 @@ const Home = () => {
                 <h2>Driver of the year</h2>
                 <IconVertical />
               </div>
-
               <Award />
             </Card>
           </div>

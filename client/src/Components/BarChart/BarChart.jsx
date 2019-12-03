@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
-const BarChart = ({ gradient, labels, datasetLabel, data }) => {
+const BarChart = ({ gradient, bg, labels, datasetLabel, data }) => {
   let Chart = {
     data: canvas => {
       let ctx = canvas.getContext('2d');
@@ -14,7 +14,7 @@ const BarChart = ({ gradient, labels, datasetLabel, data }) => {
           {
             label: datasetLabel,
             fill: true,
-            backgroundColor: gradientStroke,
+            backgroundColor: bg,
             hoverBackgroundColor: gradientStroke,
             borderColor: gradient,
             borderWidth: 2,
