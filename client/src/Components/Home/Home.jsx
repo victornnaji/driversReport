@@ -6,8 +6,8 @@ import ProgressBar from '../CircularProgressBar/ProgressBar';
 import IconVertical from '../VerticalIcon/IconVertical';
 import BarChart from '../BarChart/BarChart';
 import Chips from '../Badge/Badge';
-import LinearProgress from '@material-ui/core/LinearProgress';
 import LinearProgressBar from '../LinearProgress/LinearProgress';
+import Award from '../Award/Award';
 
 const Home = () => {
   const { setHeading } = useContext(HeadingContext);
@@ -25,7 +25,6 @@ const Home = () => {
         return data.json();
       })
       .then(data => {
-        console.log(data.data);
         let datanew = data.data.billedTotal;
         setTotal(datanew);
         setGender({ male: data.data.male, female: data.data.female });
@@ -106,6 +105,25 @@ const Home = () => {
                   <LinearProgressBar percentCash={percentCash} />
                 </div>
               </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+
+      <div className="home-body">
+        <div className="row">
+          <div className="col-lg-6">
+            <Card height="55">hello</Card>
+          </div>
+
+          <div className="col-lg-6">
+            <Card height="55">
+              <div className="flex-between">
+                <h2>Driver of the year</h2>
+                <IconVertical />
+              </div>
+
+              <Award />
             </Card>
           </div>
         </div>

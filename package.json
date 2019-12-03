@@ -33,7 +33,8 @@
     "react-apexcharts": "^1.3.3",
     "react-chartjs-2": "^2.8.0",
     "react-charts": "^2.0.0-beta.6",
-    "react-circular-progressbar": "^2.0.3"
+    "react-circular-progressbar": "^2.0.3",
+    "react-promise-tracker": "^2.0.5"
   },
   "devDependencies": {
     "@types/compression": "0.0.36",

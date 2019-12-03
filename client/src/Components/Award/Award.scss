@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+.award-holder {
+  margin-top: 2rem;
+
+  .crown {
+    position: absolute;
+    font-size: 8rem;
+    display: inline-block;
+    transform: translateY(-5.5rem) translateX(29rem) rotate(45deg);
+  }
+}
+
+.driver-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-holder {
+  height: 13rem;
+  width: 13rem;
+  background: linear-gradient(120deg, #ffd700, green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30rem;
+
+  & .logo-image {
+    height: 12rem;
+    width: 12rem;
+    transition: all 0.3s;
+
+    &:hover {
+      height: 11.5rem;
+      width: 11.5rem;
+    }
+  }
+}
+
+.details {
+  margin-top: 3rem;
+
+  & .name {
+    font-size: 2.5rem;
+    color: $pink-color;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.awards-list {
+  font-size: 2rem;
+}
