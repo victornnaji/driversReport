@@ -30,7 +30,7 @@ const LineChartHolder = () => {
           gradient="#8965e0"
           bg="transparent"
           labels={['Total', 'Cash', 'App']}
-          datasetLabel="Gender"
+          datasetLabel="Amount"
           data={[price.total, price.cash, price.app]}
         />
       </div>

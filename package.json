@@ -34,7 +34,9 @@
     "react-chartjs-2": "^2.8.0",
     "react-charts": "^2.0.0-beta.6",
     "react-circular-progressbar": "^2.0.3",
-    "react-promise-tracker": "^2.0.5"
+    "react-promise-tracker": "^2.0.5",
+    "tubular-common": "^2.0.6",
+    "tubular-react": "^3.0.2"
   },
   "devDependencies": {
     "@types/compression": "0.0.36",
